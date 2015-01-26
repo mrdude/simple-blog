@@ -1,0 +1,103 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	width: 90%;
+}
+
+#sidebar, #main-page-content {
+	margin: 1.5em 0;
+}
+
+#sidebar {
+	width: 25%;
+	max-width: 65ch;
+	padding-right: 2.5em;
+}
+
+#main-page-content {
+	position: absolute;
+	left: 30%;
+	top: 0;
+	
+	width: 70%;
+	border-left: solid 1px black;
+	padding-left: 2.5em;
+}
+
+/* sidebar */
+#sidebar .blogname {
+	font-size: 2em;
+}
+
+#sidebar ul {
+	list-style-type: none;
+	text-align: right;
+}
+
+#sidebar ul a {
+	color: gray;
+	text-decoration: none;
+}
+
+#sidebar ul a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+/* post stuff */
+.post {
+	font-family: "Helvetica", "Arial", "sans-serif";
+	
+	max-width: 100ch;
+	border-bottom: solid 1px black;
+	padding: 1em 10px;
+}
+
+.post:last-child {
+	border-bottom: none;
+}
+
+.post .title {
+	display: block;
+	font-size: 3em;
+}
+
+.post .byline {
+	display: block;
+	font-size: 0.85em;
+	color: gray;
+}
+
+.post .byline a {
+	color: gray;
+	text-decoration: none;
+}
+
+.post .byline a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+.post .body {
+	display: block;
+}
+
+.post .body img {
+	display: block;
+	margin: auto;
+}
+
+/* Older Posts Link */
+.older_posts_link {
+	float: right;
+}
+
+.older_posts_link:after {
+	content: " >>";
+}
